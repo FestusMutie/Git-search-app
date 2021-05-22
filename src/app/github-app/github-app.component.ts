@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github-app.component.css']
 })
 export class GithubAppComponent implements OnInit {
-
+public githubUserQuery: string;
   constructor() { }
+  public searchUser(){
+    
+  }
 
   ngOnInit(): void {
   }
