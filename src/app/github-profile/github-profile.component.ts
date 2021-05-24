@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubServiceService } from '../github-service.service';
+import { Users } from '../users';
 
 @Component({
   selector: 'app-github-profile',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github-profile.component.css']
 })
 export class GithubProfileComponent implements OnInit {
+user:Users;
+repoDetails =[]
+  githubService: GithubServiceService;
 
-  constructor() { }
+constructor(githubService:GithubServiceService) { 
+  this.githubService = githubService
+}
 
-  ngOnInit(): void {
+  ngOnInit(){
+  this.user=this.githubService.user,
+this.repoDetails=this.githubService.repositoryData
   }
 
 }
