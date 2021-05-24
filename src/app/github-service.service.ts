@@ -39,7 +39,22 @@ this.Http.get<apiResponse>("https://api.github.com/users/" + userName).toPromise
 },error=>{
   reject(error)
 })
+//to get github repos
+this.Http.get<any>("https://api.github.com/users/" + userName + "/Repo").toPromise().then(response =>{
+  for(let i =0; i < response.length;i++){
+    this.newUserData = new Repo(
+      response[i].name,
+      response[i].description,
+      response[i].updated_at,
+      response[i].language
+    )
+    this.repositoryData.push(this.newUserData)
+  }
+  resolve()
+},error=>{
+  reject(error)
 })
+})
+return promise
 }
-//for github repos
 }
