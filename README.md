@@ -44,7 +44,7 @@ OUTPUT:"Dispaly user profile and list of repositories.
 * Angular
 * Javascript
 
-## Contact details
+## Support and Contact details
 If you need further assistance, or have any comments regarding this project, kindly get in touch with the developer via this email mutiefestus84@gmail.com
 
 
