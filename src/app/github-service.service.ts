@@ -21,7 +21,7 @@ this.repo = new Repo ("", "", new Date, "")
 public getUserData(userName:string) {
 interface apiResponse{
   login:string, 
-  avatar_url:string,
+  avatar_url:any,
   bio:string;
   public_repos:number,
   created_at:Date
