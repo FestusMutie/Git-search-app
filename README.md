@@ -33,7 +33,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 1.Displays form for searching username details to display the user Github profile and the list of the  repositories in that account.
 
 INPUT:"Username"
-OUTPUT:"Dispaly user profile and list of repositories"
+OUTPUT:"Dispaly user profile and list of repositories.
+
+## Known Bugs
+ Takes a lot of time to load the user profiles.
 
 ## Technologies Used
 * HTML
